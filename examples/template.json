@@ -1,0 +1,4032 @@
+{
+  "root": {
+    "type": "object",
+    "required": [
+      "model",
+      "region",
+      "variable",
+      "scenario",
+      "unit",
+      "year",
+      "value",
+      "item"
+    ],
+    "properties": {
+      "item": {
+        "type": "string"
+      },
+      "unit": {
+        "type": "string"
+      },
+      "year": {
+        "type": "number"
+      },
+      "model": {
+        "type": "string"
+      },
+      "value": {
+        "type": "number"
+      },
+      "region": {
+        "type": "string"
+      },
+      "scenario": {
+        "type": "string"
+      },
+      "variable": {
+        "type": "string"
+      }
+    }
+  },
+  "map_item": {
+    "ff": {
+      "name": "ff",
+      "description": "Fossil fuel"
+    },
+    "agr": {
+      "name": "agr",
+      "description": "Cropland + grassland"
+    },
+    "bua": {
+      "name": "bua",
+      "description": "Built-up area"
+    },
+    "bui": {
+      "name": "bui",
+      "description": "Built up areas"
+    },
+    "cap": {
+      "name": "cap",
+      "description": "Capital"
+    },
+    "cgr": {
+      "name": "cgr",
+      "description": "Other cereal grains"
+    },
+    "crp": {
+      "name": "crp",
+      "description": "Cropland (including energy crops)"
+    },
+    "dry": {
+      "name": "dry",
+      "description": "Dairy (raw milk equivalent)"
+    },
+    "ecp": {
+      "name": "ecp",
+      "description": "Energy crops (included in cropland)"
+    },
+    "ent": {
+      "name": "ent",
+      "description": "Enteric Fermentation"
+    },
+    "for": {
+      "name": "for",
+      "description": "Managed and primary forest"
+    },
+    "frt": {
+      "name": "frt",
+      "description": "Fertiliser"
+    },
+    "fsh": {
+      "name": "fsh",
+      "description": "Fish"
+    },
+    "grs": {
+      "name": "grs",
+      "description": "Grassland"
+    },
+    "lab": {
+      "name": "lab",
+      "description": "Labor"
+    },
+    "lsp": {
+      "name": "lsp",
+      "description": "Livestock products"
+    },
+    "mas": {
+      "name": "mas",
+      "description": "Manure applied to soils"
+    },
+    "mgr": {
+      "name": "mgr",
+      "description": "Manure dropped on pasture"
+    },
+    "mmg": {
+      "name": "mmg",
+      "description": "Manure mangement"
+    },
+    "nld": {
+      "name": "nld",
+      "description": "Non arable land (OLD+BUI = desert etc + built-up areas…)"
+    },
+    "nrm": {
+      "name": "nrm",
+      "description": "Non ruminant meats"
+    },
+    "oap": {
+      "name": "oap",
+      "description": "Other animal products (wool, honey)"
+    },
+    "ocr": {
+      "name": "ocr",
+      "description": "Other crops"
+    },
+    "ofd": {
+      "name": "ofd",
+      "description": "Other feed products"
+    },
+    "old": {
+      "name": "old",
+      "description": "Other land except CRP,GRS,ONV,FOR,BUI (desert, glaciers, etc)"
+    },
+    "onv": {
+      "name": "onv",
+      "description": "Other natural land (mostly shrubland)"
+    },
+    "osd": {
+      "name": "osd",
+      "description": "Oilseeds and oil crops (raw equivalent)"
+    },
+    "pfb": {
+      "name": "pfb",
+      "description": "Plant based fibres"
+    },
+    "rcc": {
+      "name": "rcc",
+      "description": "Rice cultivation"
+    },
+    "ric": {
+      "name": "ric",
+      "description": "Rice (paddy equivalent)"
+    },
+    "rum": {
+      "name": "rum",
+      "description": "Ruminant meats"
+    },
+    "sfr": {
+      "name": "sfr",
+      "description": "Synthetic fertilizer application"
+    },
+    "sgc": {
+      "name": "sgc",
+      "description": "Sugar crops (raw equivalent)"
+    },
+    "tot": {
+      "name": "tot",
+      "description": "Total (full economy, population, GDP, calories)"
+    },
+    "vfn": {
+      "name": "vfn",
+      "description": "Vegetables, fruits, nuts (incl. roots and tubers)"
+    },
+    "wht": {
+      "name": "wht",
+      "description": "Wheat"
+    },
+    "bc20": {
+      "name": "bc20",
+      "description": "Total biobased chemicals (C20)",
+      "__parsed_extra": [
+        ""
+      ]
+    },
+    "elec": {
+      "name": "elec",
+      "description": "Electricity"
+    },
+    "nonf": {
+      "name": "nonf",
+      "description": "Non food sectors"
+    },
+    "pdsv": {
+      "name": "pdsv",
+      "description": "Food services"
+    },
+    "prag": {
+      "name": "prag",
+      "description": "Primary agriculture & fish"
+    },
+    "prfd": {
+      "name": "prfd",
+      "description": "Processed food sectors"
+    },
+    "cgr|mai": {
+      "name": "cgr|mai",
+      "description": "Maize"
+    },
+    "cgr|ocg": {
+      "name": "cgr|ocg",
+      "description": "other coarse grains"
+    },
+    "crp|ara": {
+      "name": "crp|ara",
+      "description": "Arable crops"
+    },
+    "crp|prm": {
+      "name": "crp|prm",
+      "description": "Permanent crops"
+    },
+    "nrm|egg": {
+      "name": "nrm|egg",
+      "description": "Poultry eggs"
+    },
+    "nrm|onr": {
+      "name": "nrm|onr",
+      "description": "Other non-ruminant"
+    },
+    "nrm|prk": {
+      "name": "nrm|prk",
+      "description": "Pork meat"
+    },
+    "nrm|ptm": {
+      "name": "nrm|ptm",
+      "description": "Poultry meat"
+    },
+    "osd|ooc": {
+      "name": "osd|ooc",
+      "description": "other oilseeds and oil crops"
+    },
+    "osd|srs": {
+      "name": "osd|srs",
+      "description": "soya, rapeseed, sunflower"
+    },
+    "pfb|cot": {
+      "name": "pfb|cot",
+      "description": "Cotton"
+    },
+    "pfb|opf": {
+      "name": "pfb|opf",
+      "description": "other plant based fibres"
+    },
+    "rum|bef": {
+      "name": "rum|bef",
+      "description": "beef"
+    },
+    "rum|oru": {
+      "name": "rum|oru",
+      "description": "Other ruminant"
+    },
+    "vfn|fru": {
+      "name": "vfn|fru",
+      "description": "Fruits"
+    },
+    "vfn|nut": {
+      "name": "vfn|nut",
+      "description": "Nuts"
+    },
+    "vfn|veg": {
+      "name": "vfn|veg",
+      "description": "Vegetables"
+    },
+    "vfn|puls": {
+      "name": "vfn|puls",
+      "description": "Pulses"
+    },
+    "vfn|root": {
+      "name": "vfn|root",
+      "description": "Roots & tubers"
+    }
+  },
+  "map_region": {
+    "ame": {
+      "name": "Africa & Middle East",
+      "description": "Africa & Middle East",
+      "region_group": "non eu"
+    },
+    "anz": {
+      "name": "Australia/New Zealand",
+      "description": "Australia/New Zealand",
+      "region_group": "non eu"
+    },
+    "aut": {
+      "name": "Austria",
+      "description": "Austria",
+      "region_group": "eu"
+    },
+    "bel": {
+      "name": "Belgium",
+      "description": "Belgium",
+      "region_group": "eu"
+    },
+    "bgr": {
+      "name": "Bulgaria",
+      "description": "Bulgaria",
+      "region_group": "eu"
+    },
+    "blx": {
+      "name": "Belgium and Luxemburg",
+      "description": "Belgium and Luxemburg",
+      "region_group": "eu"
+    },
+    "bra": {
+      "name": "Brazil",
+      "description": "Brazil",
+      "region_group": "non eu"
+    },
+    "can": {
+      "name": "Canada",
+      "description": "Canada",
+      "region_group": "non eu"
+    },
+    "chn": {
+      "name": "China",
+      "description": "China (incl Hong-Kong, Macao)",
+      "region_group": "non eu"
+    },
+    "cyp": {
+      "name": "Cyprus",
+      "description": "Cyprus",
+      "region_group": "eu"
+    },
+    "cze": {
+      "name": "Czech Republic",
+      "description": "Czech Republic",
+      "region_group": "eu"
+    },
+    "deu": {
+      "name": "Germany",
+      "description": "Germany",
+      "region_group": "eu"
+    },
+    "dnk": {
+      "name": "Denmark",
+      "description": "Denmark",
+      "region_group": "eu"
+    },
+    "esp": {
+      "name": "Spain",
+      "description": "Spain",
+      "region_group": "eu"
+    },
+    "est": {
+      "name": "Estonia",
+      "description": "Estonia",
+      "region_group": "eu"
+    },
+    "eue": {
+      "name": "European Union",
+      "description": "European Union",
+      "region_group": "eu"
+    },
+    "eur": {
+      "name": "Europe",
+      "description": "Europe (excl. Turkey)",
+      "region_group": "non eu"
+    },
+    "fin": {
+      "name": "Finland",
+      "description": "Finland",
+      "region_group": "eu"
+    },
+    "fra": {
+      "name": "France",
+      "description": "France",
+      "region_group": "eu"
+    },
+    "fsu": {
+      "name": "Former Soviet Union",
+      "description": "Former Soviet Union (European and Asian)",
+      "region_group": "non eu"
+    },
+    "gbr": {
+      "name": "Great Britain",
+      "description": "Great Britain",
+      "region_group": "eu"
+    },
+    "gcm": {
+      "name": "Greece, Cyprus and Malta",
+      "description": "Greece, Cyprus and Malta",
+      "region_group": "eu"
+    },
+    "grc": {
+      "name": "Greece",
+      "description": "Greece",
+      "region_group": "eu"
+    },
+    "hrv": {
+      "name": "Croatia",
+      "description": "Croatia",
+      "region_group": "eu"
+    },
+    "hun": {
+      "name": "Hungary",
+      "description": "Hungary",
+      "region_group": "eu"
+    },
+    "ind": {
+      "name": "India",
+      "description": "India",
+      "region_group": "non eu"
+    },
+    "irl": {
+      "name": "Ireland",
+      "description": "Ireland",
+      "region_group": "eu"
+    },
+    "ita": {
+      "name": "Italy",
+      "description": "Italy",
+      "region_group": "eu"
+    },
+    "ltu": {
+      "name": "Lithuania",
+      "description": "Lithuania",
+      "region_group": "eu"
+    },
+    "lux": {
+      "name": "Luxembourg",
+      "description": "Luxembourg",
+      "region_group": "eu"
+    },
+    "lva": {
+      "name": "Latvia",
+      "description": "Latvia",
+      "region_group": "eu"
+    },
+    "men": {
+      "name": "Middle-East/North Afr.",
+      "description": "Middle-East / North Africa (incl. Turkey)",
+      "region_group": "non eu"
+    },
+    "mlt": {
+      "name": "Malta",
+      "description": "Malta",
+      "region_group": "eu"
+    },
+    "nam": {
+      "name": "North America",
+      "description": "North America (Canada & USA)",
+      "region_group": "non eu"
+    },
+    "nld": {
+      "name": "Netherlands",
+      "description": "Netherlands",
+      "region_group": "eu"
+    },
+    "nor": {
+      "name": "Norway",
+      "description": "Norway",
+      "region_group": "eu"
+    },
+    "oam": {
+      "name": "S&C America",
+      "description": "Other Americas (South, Central & Caribbean)",
+      "region_group": "non eu"
+    },
+    "oas": {
+      "name": "Other Asia",
+      "description": "Other Asia (incl. Other Oceania)",
+      "region_group": "non eu"
+    },
+    "osa": {
+      "name": "Other S&C America",
+      "description": "Other South, Central America & Caribbean (incl. Mexico)",
+      "region_group": "non eu"
+    },
+    "pol": {
+      "name": "Poland",
+      "description": "Poland",
+      "region_group": "eu"
+    },
+    "prt": {
+      "name": "Portugal",
+      "description": "Portugal",
+      "region_group": "eu"
+    },
+    "reu": {
+      "name": "Rest of Europe",
+      "description": "Rest of Europe",
+      "region_group": "eu"
+    },
+    "rou": {
+      "name": "Romania",
+      "description": "Romania",
+      "region_group": "eu"
+    },
+    "sas": {
+      "name": "Southern Asia",
+      "description": "Southern Asia",
+      "region_group": "non eu"
+    },
+    "sea": {
+      "name": "South-East Asia",
+      "description": "South-East Asia (incl. Japan, Taiwan)",
+      "region_group": "non eu"
+    },
+    "ssa": {
+      "name": "Sub-Saharan Afr.",
+      "description": "Sub-Saharan Africa",
+      "region_group": "non eu"
+    },
+    "svk": {
+      "name": "Slovakia",
+      "description": "Slovakia",
+      "region_group": "eu"
+    },
+    "svn": {
+      "name": "Slovenia",
+      "description": "Slovenia",
+      "region_group": "eu"
+    },
+    "swe": {
+      "name": "Sweden",
+      "description": "Sweden",
+      "region_group": "eu"
+    },
+    "usa": {
+      "name": "USA",
+      "description": "United States of America",
+      "region_group": "non eu"
+    },
+    "wld": {
+      "name": "World",
+      "description": "World",
+      "region_group": "non eu"
+    },
+    "at11": {
+      "name": "AT11--Austria",
+      "description": "AT11--Austria",
+      "region_group": "nuts2"
+    },
+    "at12": {
+      "name": "AT12--Austria",
+      "description": "AT12--Austria",
+      "region_group": "nuts2"
+    },
+    "at13": {
+      "name": "AT13--Austria",
+      "description": "AT13--Austria",
+      "region_group": "nuts2"
+    },
+    "at21": {
+      "name": "AT21--Austria",
+      "description": "AT21--Austria",
+      "region_group": "nuts2"
+    },
+    "at22": {
+      "name": "AT22--Austria",
+      "description": "AT22--Austria",
+      "region_group": "nuts2"
+    },
+    "at31": {
+      "name": "AT31--Austria",
+      "description": "AT31--Austria",
+      "region_group": "nuts2"
+    },
+    "at32": {
+      "name": "AT32--Austria",
+      "description": "AT32--Austria",
+      "region_group": "nuts2"
+    },
+    "at33": {
+      "name": "AT33--Austria",
+      "description": "AT33--Austria",
+      "region_group": "nuts2"
+    },
+    "at34": {
+      "name": "AT34--Austria",
+      "description": "AT34--Austria",
+      "region_group": "nuts2"
+    },
+    "be10": {
+      "name": "BE10--Belgium",
+      "description": "BE10--Belgium",
+      "region_group": "nuts2"
+    },
+    "be21": {
+      "name": "BE21--Belgium",
+      "description": "BE21--Belgium",
+      "region_group": "nuts2"
+    },
+    "be22": {
+      "name": "BE22--Belgium",
+      "description": "BE22--Belgium",
+      "region_group": "nuts2"
+    },
+    "be23": {
+      "name": "BE23--Belgium",
+      "description": "BE23--Belgium",
+      "region_group": "nuts2"
+    },
+    "be31": {
+      "name": "BE31--Belgium",
+      "description": "BE31--Belgium",
+      "region_group": "nuts2"
+    },
+    "be32": {
+      "name": "BE32--Belgium",
+      "description": "BE32--Belgium",
+      "region_group": "nuts2"
+    },
+    "be33": {
+      "name": "BE33--Belgium",
+      "description": "BE33--Belgium",
+      "region_group": "nuts2"
+    },
+    "bg33": {
+      "name": "BG33--Bulgaria",
+      "description": "BG33--Bulgaria",
+      "region_group": "nuts2"
+    },
+    "bg34": {
+      "name": "BG34--Bulgaria",
+      "description": "BG34--Bulgaria",
+      "region_group": "nuts2"
+    },
+    "bg41": {
+      "name": "BG41--Bulgaria",
+      "description": "BG41--Bulgaria",
+      "region_group": "nuts2"
+    },
+    "bg42": {
+      "name": "BG42--Bulgaria",
+      "description": "BG42--Bulgaria",
+      "region_group": "nuts2"
+    },
+    "ch01": {
+      "name": "CH01--Switzerland",
+      "description": "CH01--Switzerland",
+      "region_group": "nuts2"
+    },
+    "ch02": {
+      "name": "CH02--Switzerland",
+      "description": "CH02--Switzerland",
+      "region_group": "nuts2"
+    },
+    "ch03": {
+      "name": "CH03--Switzerland",
+      "description": "CH03--Switzerland",
+      "region_group": "nuts2"
+    },
+    "ch04": {
+      "name": "CH04--Switzerland",
+      "description": "CH04--Switzerland",
+      "region_group": "nuts2"
+    },
+    "ch05": {
+      "name": "CH05--Switzerland",
+      "description": "CH05--Switzerland",
+      "region_group": "nuts2"
+    },
+    "ch06": {
+      "name": "CH06--Switzerland",
+      "description": "CH06--Switzerland",
+      "region_group": "nuts2"
+    },
+    "cy00": {
+      "name": "CY00--Cyprus",
+      "description": "CY00--Cyprus",
+      "region_group": "nuts2"
+    },
+    "cz01": {
+      "name": "CZ01--Czech Republic",
+      "description": "CZ01--Czech Republic",
+      "region_group": "nuts2"
+    },
+    "cz02": {
+      "name": "CZ02--Czech Republic",
+      "description": "CZ02--Czech Republic",
+      "region_group": "nuts2"
+    },
+    "cz03": {
+      "name": "CZ03--Czech Republic",
+      "description": "CZ03--Czech Republic",
+      "region_group": "nuts2"
+    },
+    "cz04": {
+      "name": "CZ04--Czech Republic",
+      "description": "CZ04--Czech Republic",
+      "region_group": "nuts2"
+    },
+    "cz05": {
+      "name": "CZ05--Czech Republic",
+      "description": "CZ05--Czech Republic",
+      "region_group": "nuts2"
+    },
+    "cz06": {
+      "name": "CZ06--Czech Republic",
+      "description": "CZ06--Czech Republic",
+      "region_group": "nuts2"
+    },
+    "cz07": {
+      "name": "CZ07--Czech Republic",
+      "description": "CZ07--Czech Republic",
+      "region_group": "nuts2"
+    },
+    "de1a": {
+      "name": "DE1A--Germany",
+      "description": "DE1A--Germany",
+      "region_group": "nuts2"
+    },
+    "de1b": {
+      "name": "DE1B--Germany",
+      "description": "DE1B--Germany",
+      "region_group": "nuts2"
+    },
+    "de1c": {
+      "name": "DE1C--Germany",
+      "description": "DE1C--Germany",
+      "region_group": "nuts2"
+    },
+    "de2a": {
+      "name": "DE2A--Germany",
+      "description": "DE2A--Germany",
+      "region_group": "nuts2"
+    },
+    "de2b": {
+      "name": "DE2B--Germany",
+      "description": "DE2B--Germany",
+      "region_group": "nuts2"
+    },
+    "de2c": {
+      "name": "DE2C--Germany",
+      "description": "DE2C--Germany",
+      "region_group": "nuts2"
+    },
+    "de3a": {
+      "name": "DE3A--Germany",
+      "description": "DE3A--Germany",
+      "region_group": "nuts2"
+    },
+    "de3b": {
+      "name": "DE3B--Germany",
+      "description": "DE3B--Germany",
+      "region_group": "nuts2"
+    },
+    "de4a": {
+      "name": "DE4A--Germany",
+      "description": "DE4A--Germany",
+      "region_group": "nuts2"
+    },
+    "de4b": {
+      "name": "DE4B--Germany",
+      "description": "DE4B--Germany",
+      "region_group": "nuts2"
+    },
+    "de5a": {
+      "name": "DE5A--Germany",
+      "description": "DE5A--Germany",
+      "region_group": "nuts2"
+    },
+    "de5b": {
+      "name": "DE5B--Germany",
+      "description": "DE5B--Germany",
+      "region_group": "nuts2"
+    },
+    "de6a": {
+      "name": "DE6A--Germany",
+      "description": "DE6A--Germany",
+      "region_group": "nuts2"
+    },
+    "de6b": {
+      "name": "DE6B--Germany",
+      "description": "DE6B--Germany",
+      "region_group": "nuts2"
+    },
+    "de7a": {
+      "name": "DE7A--Germany",
+      "description": "DE7A--Germany",
+      "region_group": "nuts2"
+    },
+    "de7b": {
+      "name": "DE7B--Germany",
+      "description": "DE7B--Germany",
+      "region_group": "nuts2"
+    },
+    "dk01": {
+      "name": "DK01--Denmark",
+      "description": "DK01--Denmark",
+      "region_group": "nuts2"
+    },
+    "dk02": {
+      "name": "DK02--Denmark",
+      "description": "DK02--Denmark",
+      "region_group": "nuts2"
+    },
+    "dk03": {
+      "name": "DK03--Denmark",
+      "description": "DK03--Denmark",
+      "region_group": "nuts2"
+    },
+    "dk04": {
+      "name": "DK04--Denmark",
+      "description": "DK04--Denmark",
+      "region_group": "nuts2"
+    },
+    "dk05": {
+      "name": "DK05--Denmark",
+      "description": "DK05--Denmark",
+      "region_group": "nuts2"
+    },
+    "ee00": {
+      "name": "EE00--Estonia",
+      "description": "EE00--Estonia",
+      "region_group": "nuts2"
+    },
+    "es11": {
+      "name": "ES11--Spain",
+      "description": "ES11--Spain",
+      "region_group": "nuts2"
+    },
+    "es12": {
+      "name": "ES12--Spain",
+      "description": "ES12--Spain",
+      "region_group": "nuts2"
+    },
+    "es13": {
+      "name": "ES13--Spain",
+      "description": "ES13--Spain",
+      "region_group": "nuts2"
+    },
+    "es14": {
+      "name": "ES14--Spain",
+      "description": "ES14--Spain",
+      "region_group": "nuts2"
+    },
+    "es15": {
+      "name": "ES15--Spain",
+      "description": "ES15--Spain",
+      "region_group": "nuts2"
+    },
+    "es16": {
+      "name": "ES16--Spain",
+      "description": "ES16--Spain",
+      "region_group": "nuts2"
+    },
+    "es21": {
+      "name": "ES21--Spain",
+      "description": "ES21--Spain",
+      "region_group": "nuts2"
+    },
+    "es22": {
+      "name": "ES22--Spain",
+      "description": "ES22--Spain",
+      "region_group": "nuts2"
+    },
+    "es23": {
+      "name": "ES23--Spain",
+      "description": "ES23--Spain",
+      "region_group": "nuts2"
+    },
+    "es24": {
+      "name": "ES24--Spain",
+      "description": "ES24--Spain",
+      "region_group": "nuts2"
+    },
+    "es30": {
+      "name": "ES30--Spain",
+      "description": "ES30--Spain",
+      "region_group": "nuts2"
+    },
+    "es31": {
+      "name": "ES31--Spain",
+      "description": "ES31--Spain",
+      "region_group": "nuts2"
+    },
+    "es32": {
+      "name": "ES32--Spain",
+      "description": "ES32--Spain",
+      "region_group": "nuts2"
+    },
+    "es33": {
+      "name": "ES33--Spain",
+      "description": "ES33--Spain",
+      "region_group": "nuts2"
+    },
+    "es34": {
+      "name": "ES34--Spain",
+      "description": "ES34--Spain",
+      "region_group": "nuts2"
+    },
+    "es51": {
+      "name": "ES51--Spain",
+      "description": "ES51--Spain",
+      "region_group": "nuts2"
+    },
+    "es52": {
+      "name": "ES52--Spain",
+      "description": "ES52--Spain",
+      "region_group": "nuts2"
+    },
+    "fi1a": {
+      "name": "FI1A--Finland",
+      "description": "FI1A--Finland",
+      "region_group": "nuts2"
+    },
+    "fi1b": {
+      "name": "FI1B--Finland",
+      "description": "FI1B--Finland",
+      "region_group": "nuts2"
+    },
+    "fi1c": {
+      "name": "FI1C--Finland",
+      "description": "FI1C--Finland",
+      "region_group": "nuts2"
+    },
+    "fi1d": {
+      "name": "FI1D--Finland",
+      "description": "FI1D--Finland",
+      "region_group": "nuts2"
+    },
+    "fi1e": {
+      "name": "FI1E--Finland",
+      "description": "FI1E--Finland",
+      "region_group": "nuts2"
+    },
+    "fi1f": {
+      "name": "FI1F--Finland",
+      "description": "FI1F--Finland",
+      "region_group": "nuts2"
+    },
+    "fi1g": {
+      "name": "FI1G--Finland",
+      "description": "FI1G--Finland",
+      "region_group": "nuts2"
+    },
+    "fi1h": {
+      "name": "FI1H--Finland",
+      "description": "FI1H--Finland",
+      "region_group": "nuts2"
+    },
+    "fi1j": {
+      "name": "FI1J--Finland",
+      "description": "FI1J--Finland",
+      "region_group": "nuts2"
+    },
+    "fi20": {
+      "name": "FI20--Finland",
+      "description": "FI20--Finland",
+      "region_group": "nuts2"
+    },
+    "fr10": {
+      "name": "FR10--France",
+      "description": "FR10--France",
+      "region_group": "nuts2"
+    },
+    "fr21": {
+      "name": "FR21--France",
+      "description": "FR21--France",
+      "region_group": "nuts2"
+    },
+    "fr22": {
+      "name": "FR22--France",
+      "description": "FR22--France",
+      "region_group": "nuts2"
+    },
+    "fr23": {
+      "name": "FR23--France",
+      "description": "FR23--France",
+      "region_group": "nuts2"
+    },
+    "fr24": {
+      "name": "FR24--France",
+      "description": "FR24--France",
+      "region_group": "nuts2"
+    },
+    "fr25": {
+      "name": "FR25--France",
+      "description": "FR25--France",
+      "region_group": "nuts2"
+    },
+    "fr26": {
+      "name": "FR26--France",
+      "description": "FR26--France",
+      "region_group": "nuts2"
+    },
+    "fr30": {
+      "name": "FR30--France",
+      "description": "FR30--France",
+      "region_group": "nuts2"
+    },
+    "fr41": {
+      "name": "FR41--France",
+      "description": "FR41--France",
+      "region_group": "nuts2"
+    },
+    "fr42": {
+      "name": "FR42--France",
+      "description": "FR42--France",
+      "region_group": "nuts2"
+    },
+    "fr43": {
+      "name": "FR43--France",
+      "description": "FR43--France",
+      "region_group": "nuts2"
+    },
+    "fr51": {
+      "name": "FR51--France",
+      "description": "FR51--France",
+      "region_group": "nuts2"
+    },
+    "fr52": {
+      "name": "FR52--France",
+      "description": "FR52--France",
+      "region_group": "nuts2"
+    },
+    "gr11": {
+      "name": "GR11--Greece",
+      "description": "GR11--Greece",
+      "region_group": "nuts2"
+    },
+    "gr12": {
+      "name": "GR12--Greece",
+      "description": "GR12--Greece",
+      "region_group": "nuts2"
+    },
+    "gr13": {
+      "name": "GR13--Greece",
+      "description": "GR13--Greece",
+      "region_group": "nuts2"
+    },
+    "gr14": {
+      "name": "GR14--Greece",
+      "description": "GR14--Greece",
+      "region_group": "nuts2"
+    },
+    "gr21": {
+      "name": "GR21--Greece",
+      "description": "GR21--Greece",
+      "region_group": "nuts2"
+    },
+    "gr22": {
+      "name": "GR22--Greece",
+      "description": "GR22--Greece",
+      "region_group": "nuts2"
+    },
+    "gr23": {
+      "name": "GR23--Greece",
+      "description": "GR23--Greece",
+      "region_group": "nuts2"
+    },
+    "gr24": {
+      "name": "GR24--Greece",
+      "description": "GR24--Greece",
+      "region_group": "nuts2"
+    },
+    "gr25": {
+      "name": "GR25--Greece",
+      "description": "GR25--Greece",
+      "region_group": "nuts2"
+    },
+    "gr30": {
+      "name": "GR30--Greece",
+      "description": "GR30--Greece",
+      "region_group": "nuts2"
+    },
+    "hr01": {
+      "name": "HR01--Croatia",
+      "description": "HR01--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr02": {
+      "name": "HR02--Croatia",
+      "description": "HR02--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr03": {
+      "name": "HR03--Croatia",
+      "description": "HR03--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr04": {
+      "name": "HR04--Croatia",
+      "description": "HR04--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr05": {
+      "name": "HR05--Croatia",
+      "description": "HR05--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr06": {
+      "name": "HR06--Croatia",
+      "description": "HR06--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr07": {
+      "name": "HR07--Croatia",
+      "description": "HR07--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr08": {
+      "name": "HR08--Croatia",
+      "description": "HR08--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr09": {
+      "name": "HR09--Croatia",
+      "description": "HR09--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr10": {
+      "name": "HR10--Croatia",
+      "description": "HR10--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr11": {
+      "name": "HR11--Croatia",
+      "description": "HR11--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr12": {
+      "name": "HR12--Croatia",
+      "description": "HR12--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr13": {
+      "name": "HR13--Croatia",
+      "description": "HR13--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr14": {
+      "name": "HR14--Croatia",
+      "description": "HR14--Croatia",
+      "region_group": "nuts2"
+    },
+    "hr15": {
+      "name": "HR15--Croatia",
+      "description": "HR15--Croatia",
+      "region_group": "nuts2"
+    },
+    "hu10": {
+      "name": "HU10--Hungary",
+      "description": "HU10--Hungary",
+      "region_group": "nuts2"
+    },
+    "hu11": {
+      "name": "HU11--Hungary",
+      "description": "HU11--Hungary",
+      "region_group": "nuts2"
+    },
+    "hu12": {
+      "name": "HU12--Hungary",
+      "description": "HU12--Hungary",
+      "region_group": "nuts2"
+    },
+    "hu21": {
+      "name": "HU21--Hungary",
+      "description": "HU21--Hungary",
+      "region_group": "nuts2"
+    },
+    "hu22": {
+      "name": "HU22--Hungary",
+      "description": "HU22--Hungary",
+      "region_group": "nuts2"
+    },
+    "hu23": {
+      "name": "HU23--Hungary",
+      "description": "HU23--Hungary",
+      "region_group": "nuts2"
+    },
+    "hu31": {
+      "name": "HU31--Hungary",
+      "description": "HU31--Hungary",
+      "region_group": "nuts2"
+    },
+    "ie01": {
+      "name": "IE01--Ireland",
+      "description": "IE01--Ireland",
+      "region_group": "nuts2"
+    },
+    "ie02": {
+      "name": "IE02--Ireland",
+      "description": "IE02--Ireland",
+      "region_group": "nuts2"
+    },
+    "ie03": {
+      "name": "IE03--Ireland",
+      "description": "IE03--Ireland",
+      "region_group": "nuts2"
+    },
+    "ie04": {
+      "name": "IE04--Ireland",
+      "description": "IE04--Ireland",
+      "region_group": "nuts2"
+    },
+    "is01": {
+      "name": "IS01--Iceland",
+      "description": "IS01--Iceland",
+      "region_group": "nuts2"
+    },
+    "is02": {
+      "name": "IS02--Iceland",
+      "description": "IS02--Iceland",
+      "region_group": "nuts2"
+    },
+    "is03": {
+      "name": "IS03--Iceland",
+      "description": "IS03--Iceland",
+      "region_group": "nuts2"
+    },
+    "is04": {
+      "name": "IS04--Iceland",
+      "description": "IS04--Iceland",
+      "region_group": "nuts2"
+    },
+    "is05": {
+      "name": "IS05--Iceland",
+      "description": "IS05--Iceland",
+      "region_group": "nuts2"
+    },
+    "is06": {
+      "name": "IS06--Iceland",
+      "description": "IS06--Iceland",
+      "region_group": "nuts2"
+    },
+    "itc1": {
+      "name": "ITC1--Italy",
+      "description": "ITC1--Italy",
+      "region_group": "nuts2"
+    },
+    "itc2": {
+      "name": "ITC2--Italy",
+      "description": "ITC2--Italy",
+      "region_group": "nuts2"
+    },
+    "itc3": {
+      "name": "ITC3--Italy",
+      "description": "ITC3--Italy",
+      "region_group": "nuts2"
+    },
+    "itc4": {
+      "name": "ITC4--Italy",
+      "description": "ITC4--Italy",
+      "region_group": "nuts2"
+    },
+    "itc5": {
+      "name": "ITC5--Italy",
+      "description": "ITC5--Italy",
+      "region_group": "nuts2"
+    },
+    "itc6": {
+      "name": "ITC6--Italy",
+      "description": "ITC6--Italy",
+      "region_group": "nuts2"
+    },
+    "itc7": {
+      "name": "ITC7--Italy",
+      "description": "ITC7--Italy",
+      "region_group": "nuts2"
+    },
+    "itc8": {
+      "name": "ITC8--Italy",
+      "description": "ITC8--Italy",
+      "region_group": "nuts2"
+    },
+    "itc9": {
+      "name": "ITC9--Italy",
+      "description": "ITC9--Italy",
+      "region_group": "nuts2"
+    },
+    "itd1": {
+      "name": "ITD1--Italy",
+      "description": "ITD1--Italy",
+      "region_group": "nuts2"
+    },
+    "itd2": {
+      "name": "ITD2--Italy",
+      "description": "ITD2--Italy",
+      "region_group": "nuts2"
+    },
+    "itd3": {
+      "name": "ITD3--Italy",
+      "description": "ITD3--Italy",
+      "region_group": "nuts2"
+    },
+    "itd4": {
+      "name": "ITD4--Italy",
+      "description": "ITD4--Italy",
+      "region_group": "nuts2"
+    },
+    "itd5": {
+      "name": "ITD5--Italy",
+      "description": "ITD5--Italy",
+      "region_group": "nuts2"
+    },
+    "itd6": {
+      "name": "ITD6--Italy",
+      "description": "ITD6--Italy",
+      "region_group": "nuts2"
+    },
+    "ite1": {
+      "name": "ITE1--Italy",
+      "description": "ITE1--Italy",
+      "region_group": "nuts2"
+    },
+    "ite2": {
+      "name": "ITE2--Italy",
+      "description": "ITE2--Italy",
+      "region_group": "nuts2"
+    },
+    "ite3": {
+      "name": "ITE3--Italy",
+      "description": "ITE3--Italy",
+      "region_group": "nuts2"
+    },
+    "ite4": {
+      "name": "ITE4--Italy",
+      "description": "ITE4--Italy",
+      "region_group": "nuts2"
+    },
+    "ite5": {
+      "name": "ITE5--Italy",
+      "description": "ITE5--Italy",
+      "region_group": "nuts2"
+    },
+    "lt00": {
+      "name": "LT00--Lithuania",
+      "description": "LT00--Lithuania",
+      "region_group": "nuts2"
+    },
+    "lu00": {
+      "name": "LU00--Luxembourg",
+      "description": "LU00--Luxembourg",
+      "region_group": "nuts2"
+    },
+    "lv00": {
+      "name": "LV00--Latvia",
+      "description": "LV00--Latvia",
+      "region_group": "nuts2"
+    },
+    "mt00": {
+      "name": "MT00--Malta",
+      "description": "MT00--Malta",
+      "region_group": "nuts2"
+    },
+    "nl11": {
+      "name": "NL11--Netherlands",
+      "description": "NL11--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl12": {
+      "name": "NL12--Netherlands",
+      "description": "NL12--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl13": {
+      "name": "NL13--Netherlands",
+      "description": "NL13--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl14": {
+      "name": "NL14--Netherlands",
+      "description": "NL14--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl15": {
+      "name": "NL15--Netherlands",
+      "description": "NL15--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl21": {
+      "name": "NL21--Netherlands",
+      "description": "NL21--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl22": {
+      "name": "NL22--Netherlands",
+      "description": "NL22--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl23": {
+      "name": "NL23--Netherlands",
+      "description": "NL23--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl31": {
+      "name": "NL31--Netherlands",
+      "description": "NL31--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl32": {
+      "name": "NL32--Netherlands",
+      "description": "NL32--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl33": {
+      "name": "NL33--Netherlands",
+      "description": "NL33--Netherlands",
+      "region_group": "nuts2"
+    },
+    "nl34": {
+      "name": "NL34--Netherlands",
+      "description": "NL34--Netherlands",
+      "region_group": "nuts2"
+    },
+    "no01": {
+      "name": "NO01--Norway",
+      "description": "NO01--Norway",
+      "region_group": "nuts2"
+    },
+    "no02": {
+      "name": "NO02--Norway",
+      "description": "NO02--Norway",
+      "region_group": "nuts2"
+    },
+    "no03": {
+      "name": "NO03--Norway",
+      "description": "NO03--Norway",
+      "region_group": "nuts2"
+    },
+    "no04": {
+      "name": "NO04--Norway",
+      "description": "NO04--Norway",
+      "region_group": "nuts2"
+    },
+    "no05": {
+      "name": "NO05--Norway",
+      "description": "NO05--Norway",
+      "region_group": "nuts2"
+    },
+    "no06": {
+      "name": "NO06--Norway",
+      "description": "NO06--Norway",
+      "region_group": "nuts2"
+    },
+    "no07": {
+      "name": "NO07--Norway",
+      "description": "NO07--Norway",
+      "region_group": "nuts2"
+    },
+    "no08": {
+      "name": "NO08--Norway",
+      "description": "NO08--Norway",
+      "region_group": "nuts2"
+    },
+    "pl11": {
+      "name": "PL11--Poland",
+      "description": "PL11--Poland",
+      "region_group": "nuts2"
+    },
+    "pl12": {
+      "name": "PL12--Poland",
+      "description": "PL12--Poland",
+      "region_group": "nuts2"
+    },
+    "pl21": {
+      "name": "PL21--Poland",
+      "description": "PL21--Poland",
+      "region_group": "nuts2"
+    },
+    "pl22": {
+      "name": "PL22--Poland",
+      "description": "PL22--Poland",
+      "region_group": "nuts2"
+    },
+    "pl31": {
+      "name": "PL31--Poland",
+      "description": "PL31--Poland",
+      "region_group": "nuts2"
+    },
+    "pl32": {
+      "name": "PL32--Poland",
+      "description": "PL32--Poland",
+      "region_group": "nuts2"
+    },
+    "pl33": {
+      "name": "PL33--Poland",
+      "description": "PL33--Poland",
+      "region_group": "nuts2"
+    },
+    "pl34": {
+      "name": "PL34--Poland",
+      "description": "PL34--Poland",
+      "region_group": "nuts2"
+    },
+    "pl41": {
+      "name": "PL41--Poland",
+      "description": "PL41--Poland",
+      "region_group": "nuts2"
+    },
+    "pl42": {
+      "name": "PL42--Poland",
+      "description": "PL42--Poland",
+      "region_group": "nuts2"
+    },
+    "pl51": {
+      "name": "PL51--Poland",
+      "description": "PL51--Poland",
+      "region_group": "nuts2"
+    },
+    "pl52": {
+      "name": "PL52--Poland",
+      "description": "PL52--Poland",
+      "region_group": "nuts2"
+    },
+    "pl61": {
+      "name": "PL61--Poland",
+      "description": "PL61--Poland",
+      "region_group": "nuts2"
+    },
+    "pl62": {
+      "name": "PL62--Poland",
+      "description": "PL62--Poland",
+      "region_group": "nuts2"
+    },
+    "pl63": {
+      "name": "PL63--Poland",
+      "description": "PL63--Poland",
+      "region_group": "nuts2"
+    },
+    "pl64": {
+      "name": "PL64--Poland",
+      "description": "PL64--Poland",
+      "region_group": "nuts2"
+    },
+    "pt11": {
+      "name": "PT11--Portugal",
+      "description": "PT11--Portugal",
+      "region_group": "nuts2"
+    },
+    "pt15": {
+      "name": "PT15--Portugal",
+      "description": "PT15--Portugal",
+      "region_group": "nuts2"
+    },
+    "pt16": {
+      "name": "PT16--Portugal",
+      "description": "PT16--Portugal",
+      "region_group": "nuts2"
+    },
+    "pt17": {
+      "name": "PT17--Portugal",
+      "description": "PT17--Portugal",
+      "region_group": "nuts2"
+    },
+    "pt18": {
+      "name": "PT18--Portugal",
+      "description": "PT18--Portugal",
+      "region_group": "nuts2"
+    },
+    "pt20": {
+      "name": "PT20--Portugal",
+      "description": "PT20--Portugal",
+      "region_group": "nuts2"
+    },
+    "pt30": {
+      "name": "PT30--Portugal",
+      "description": "PT30--Portugal",
+      "region_group": "nuts2"
+    },
+    "ro31": {
+      "name": "RO31--Romania",
+      "description": "RO31--Romania",
+      "region_group": "nuts2"
+    },
+    "ro32": {
+      "name": "RO32--Romania",
+      "description": "RO32--Romania",
+      "region_group": "nuts2"
+    },
+    "ro33": {
+      "name": "RO33--Romania",
+      "description": "RO33--Romania",
+      "region_group": "nuts2"
+    },
+    "ro41": {
+      "name": "RO41--Romania",
+      "description": "RO41--Romania",
+      "region_group": "nuts2"
+    },
+    "ro42": {
+      "name": "RO42--Romania",
+      "description": "RO42--Romania",
+      "region_group": "nuts2"
+    },
+    "ro43": {
+      "name": "RO43--Romania",
+      "description": "RO43--Romania",
+      "region_group": "nuts2"
+    },
+    "ro44": {
+      "name": "RO44--Romania",
+      "description": "RO44--Romania",
+      "region_group": "nuts2"
+    },
+    "ro51": {
+      "name": "RO51--Romania",
+      "description": "RO51--Romania",
+      "region_group": "nuts2"
+    },
+    "se11": {
+      "name": "SE11--Sweden",
+      "description": "SE11--Sweden",
+      "region_group": "nuts2"
+    },
+    "se12": {
+      "name": "SE12--Sweden",
+      "description": "SE12--Sweden",
+      "region_group": "nuts2"
+    },
+    "se21": {
+      "name": "SE21--Sweden",
+      "description": "SE21--Sweden",
+      "region_group": "nuts2"
+    },
+    "se22": {
+      "name": "SE22--Sweden",
+      "description": "SE22--Sweden",
+      "region_group": "nuts2"
+    },
+    "se23": {
+      "name": "SE23--Sweden",
+      "description": "SE23--Sweden",
+      "region_group": "nuts2"
+    },
+    "se31": {
+      "name": "SE31--Sweden",
+      "description": "SE31--Sweden",
+      "region_group": "nuts2"
+    },
+    "se32": {
+      "name": "SE32--Sweden",
+      "description": "SE32--Sweden",
+      "region_group": "nuts2"
+    },
+    "se33": {
+      "name": "SE33--Sweden",
+      "description": "SE33--Sweden",
+      "region_group": "nuts2"
+    },
+    "se34": {
+      "name": "SE34--Sweden",
+      "description": "SE34--Sweden",
+      "region_group": "nuts2"
+    },
+    "se41": {
+      "name": "SE41--Sweden",
+      "description": "SE41--Sweden",
+      "region_group": "nuts2"
+    },
+    "se42": {
+      "name": "SE42--Sweden",
+      "description": "SE42--Sweden",
+      "region_group": "nuts2"
+    },
+    "se51": {
+      "name": "SE51--Sweden",
+      "description": "SE51--Sweden",
+      "region_group": "nuts2"
+    },
+    "se52": {
+      "name": "SE52--Sweden",
+      "description": "SE52--Sweden",
+      "region_group": "nuts2"
+    },
+    "si01": {
+      "name": "SI01--Slovenia",
+      "description": "SI01--Slovenia",
+      "region_group": "nuts2"
+    },
+    "si02": {
+      "name": "SI02--Slovenia",
+      "description": "SI02--Slovenia",
+      "region_group": "nuts2"
+    },
+    "si03": {
+      "name": "SI03--Slovenia",
+      "description": "SI03--Slovenia",
+      "region_group": "nuts2"
+    },
+    "si04": {
+      "name": "SI04--Slovenia",
+      "description": "SI04--Slovenia",
+      "region_group": "nuts2"
+    },
+    "si05": {
+      "name": "SI05--Slovenia",
+      "description": "SI05--Slovenia",
+      "region_group": "nuts2"
+    },
+    "si06": {
+      "name": "SI06--Slovenia",
+      "description": "SI06--Slovenia",
+      "region_group": "nuts2"
+    },
+    "ukc1": {
+      "name": "UKC1--United Kingdom",
+      "description": "UKC1--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukc2": {
+      "name": "UKC2--United Kingdom",
+      "description": "UKC2--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukc3": {
+      "name": "UKC3--United Kingdom",
+      "description": "UKC3--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukd1": {
+      "name": "UKD1--United Kingdom",
+      "description": "UKD1--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukd2": {
+      "name": "UKD2--United Kingdom",
+      "description": "UKD2--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukd3": {
+      "name": "UKD3--United Kingdom",
+      "description": "UKD3--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukd4": {
+      "name": "UKD4--United Kingdom",
+      "description": "UKD4--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukf1": {
+      "name": "UKF1--United Kingdom",
+      "description": "UKF1--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukf2": {
+      "name": "UKF2--United Kingdom",
+      "description": "UKF2--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukg1": {
+      "name": "UKG1--United Kingdom",
+      "description": "UKG1--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "ukg2": {
+      "name": "UKG2--United Kingdom",
+      "description": "UKG2--United Kingdom",
+      "region_group": "nuts2"
+    },
+    "uki1": {
+      "name": "UKI1--United Kingdom",
+      "description": "UKI1--United Kingdom",
+      "region_group": "nuts2"
+    }
+  },
+  "map_variable": {
+    "bfp": {
+      "name": "bfp",
+      "unit": "index",
+      "items": [
+        "agr",
+        "crp",
+        "for",
+        "grs",
+        "nld",
+        "onv",
+        "tot"
+      ],
+      "description": "Biodiversity friendly practices Indicator (BFP) / Paracchini-Britz index"
+    },
+    "bii": {
+      "name": "bii",
+      "unit": "index",
+      "items": [
+        "agr",
+        "crp",
+        "for",
+        "grs",
+        "nld",
+        "onv",
+        "tot"
+      ],
+      "description": "Biodiversity Intactness Index (BII)"
+    },
+    "cdi": {
+      "name": "cdi",
+      "unit": "index",
+      "items": [
+        "crp"
+      ],
+      "description": "Crop diversity index"
+    },
+    "fbi": {
+      "name": "fbi",
+      "unit": "index (2000=1)",
+      "items": [
+        "agr",
+        "crp",
+        "for",
+        "grs",
+        "nld",
+        "onv",
+        "tot"
+      ],
+      "description": "Farmland Birds Index (FBI)"
+    },
+    "soc": {
+      "name": "soc",
+      "unit": "tc/ha",
+      "items": [
+        "agr",
+        "crp",
+        "for",
+        "grs",
+        "nld",
+        "onv",
+        "tot"
+      ],
+      "description": "Soil organic carbon stocks"
+    },
+    "amcb": {
+      "name": "amcb",
+      "unit": "t",
+      "items": [
+        "agr",
+        "dry",
+        "lsp",
+        "nrm",
+        "oap",
+        "rum"
+      ],
+      "description": "Use of antimicrobials in food producing animal"
+    },
+    "annr": {
+      "name": "annr",
+      "unit": "1000 lsu",
+      "items": [
+        "dry",
+        "lsp",
+        "nrm",
+        "oap",
+        "rum"
+      ],
+      "description": "Livestock animal numbers"
+    },
+    "anpr": {
+      "id": "anpr",
+      "name": "share of animal-based protein",
+      "unit": "%",
+      "items": [],
+      "description": ""
+    },
+    "area": {
+      "name": "area",
+      "unit": "1000 ha",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Area harvested"
+    },
+    "arir": {
+      "name": "arir",
+      "unit": "1000 ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Area harvested - irrigated"
+    },
+    "arrf": {
+      "name": "arrf",
+      "unit": "1000 ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Area harvested - rainfed"
+    },
+    "biod": {
+      "id": "biod",
+      "name": "biod",
+      "unit": "bii",
+      "items": [],
+      "description": ""
+    },
+    "cali": {
+      "name": "cali",
+      "unit": "kcal/cap/d",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "p.c. calory intake"
+    },
+    "calo": {
+      "name": "calo",
+      "unit": "kcal/cap/d",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "p.c. calory availability"
+    },
+    "cons": {
+      "name": "cons",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Domestic use"
+    },
+    "ctax": {
+      "name": "ctax",
+      "unit": "usd/tco2e",
+      "items": [
+        "tot"
+      ],
+      "description": "Carbon tax level"
+    },
+    "ech4": {
+      "name": "ech4",
+      "unit": "ktch4",
+      "items": [
+        "agr",
+        "crp",
+        "dry",
+        "ent",
+        "lsp",
+        "mmg",
+        "nrm",
+        "oap",
+        "rcc",
+        "ric",
+        "rum",
+        "tot"
+      ],
+      "description": "Total CH4 emissions"
+    },
+    "eco2": {
+      "name": "eco2",
+      "unit": "mtco2e",
+      "items": [
+        "ecp",
+        "for",
+        "onv",
+        "tot"
+      ],
+      "description": "Total CO2 emissions"
+    },
+    "emis": {
+      "name": "emis",
+      "unit": "mtco2e",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "ent",
+        "for",
+        "grs",
+        "lsp",
+        "mas",
+        "mgr",
+        "mmg",
+        "nrm",
+        "oap",
+        "ocr",
+        "ofd",
+        "onv",
+        "osd",
+        "pfb",
+        "rcc",
+        "ric",
+        "rum",
+        "sfr",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Total GHG emissions"
+    },
+    "en2o": {
+      "name": "en2o",
+      "unit": "ktn2o",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "grs",
+        "lsp",
+        "mas",
+        "mgr",
+        "mmg",
+        "nrm",
+        "oap",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sfr",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Total N2O emissions"
+    },
+    "enh3": {
+      "name": "enh3",
+      "unit": "ktnh3",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Ammonia emissions"
+    },
+    "expo": {
+      "name": "expo",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Exports"
+    },
+    "fdry": {
+      "name": "fdry",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use dairy"
+    },
+    "feed": {
+      "name": "feed",
+      "unit": "1000 t",
+      "items": [
+        "cgr",
+        "crp",
+        "fsh",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use"
+    },
+    "feef": {
+      "name": "feef",
+      "unit": "kg prt/kg prt",
+      "items": [
+        "dry",
+        "fsh",
+        "lsp",
+        "nrm",
+        "rum"
+      ],
+      "description": "Feed conversion efficiency (endogenous)"
+    },
+    "fexo": {
+      "name": "fexo",
+      "unit": "kg prt/kg prt",
+      "items": [
+        "dry",
+        "fsh",
+        "lsp",
+        "nrm",
+        "rum"
+      ],
+      "description": "Feed conversion efficiency trend"
+    },
+    "ffsh": {
+      "name": "ffsh",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed fish sector"
+    },
+    "fnrm": {
+      "name": "fnrm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use non-ruminant"
+    },
+    "food": {
+      "name": "food",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Food use"
+    },
+    "frrs": {
+      "name": "frrs",
+      "unit": "share",
+      "items": [
+        "agr",
+        "crp",
+        "for",
+        "grs",
+        "nld",
+        "onv",
+        "tot"
+      ],
+      "description": "Fraction of remaining species (cSAR)"
+    },
+    "frtn": {
+      "name": "frtn",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Fertilizer use nitrogen"
+    },
+    "frtp": {
+      "name": "frtp",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Fertilizer use phosphorus"
+    },
+    "frum": {
+      "name": "frum",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use ruminant meat"
+    },
+    "ftot": {
+      "name": "ftot",
+      "unit": "1000 t",
+      "items": [
+        "tot"
+      ],
+      "description": "Biological feedstock used in biochemical production (in dm)"
+    },
+    "fvsh": {
+      "id": "fvsh",
+      "name": "share of calories from fruit and vegetables",
+      "unit": "%",
+      "items": [],
+      "description": ""
+    },
+    "gdpt": {
+      "name": "gdpt",
+      "unit": "bn usd 2005 mer",
+      "items": [],
+      "description": "Total GDP (MER)"
+    },
+    "gini": {
+      "name": "gini",
+      "unit": "index",
+      "items": [
+        "tot"
+      ],
+      "description": "Gini index"
+    },
+    "hhda": {
+      "id": "hhda",
+      "name": "household expenditure based healthy diet affordability",
+      "unit": "share",
+      "items": [],
+      "description": ""
+    },
+    "impo": {
+      "name": "impo",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Imports"
+    },
+    "land": {
+      "name": "land",
+      "unit": "1000 ha",
+      "items": [
+        "agr",
+        "bua",
+        "crp",
+        "ecp",
+        "for",
+        "grs",
+        "onv",
+        "tot"
+      ],
+      "description": "Land cover"
+    },
+    "lyld": {
+      "name": "lyld",
+      "unit": "kg prt/ha",
+      "items": [],
+      "description": "Livestock yield (endogenous)"
+    },
+    "lyxo": {
+      "name": "lyxo",
+      "unit": "kg prt/ha",
+      "items": [],
+      "description": "Exogenous livestock yield trend"
+    },
+    "nbal": {
+      "name": "nbal",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "crp",
+        "tot"
+      ],
+      "description": "Gross nitrogen balance"
+    },
+    "nett": {
+      "name": "nett",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Net trade"
+    },
+    "othu": {
+      "name": "othu",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Other use"
+    },
+    "pbal": {
+      "name": "pbal",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "crp",
+        "tot"
+      ],
+      "description": "Gross phosphorus balance"
+    },
+    "pest": {
+      "name": "pest",
+      "unit": "t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Use of chemical pesticides"
+    },
+    "phdt": {
+      "name": "phdt",
+      "unit": "%",
+      "items": [
+        "tot"
+      ],
+      "description": "Percent of the population that cannot afford a healthy diet"
+    },
+    "plpr": {
+      "id": "plpr",
+      "name": "share of plant-based protein",
+      "unit": "%",
+      "items": [],
+      "description": ""
+    },
+    "popt": {
+      "name": "popt",
+      "unit": "million",
+      "items": [],
+      "description": "Total population"
+    },
+    "prod": {
+      "name": "prod",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "grs",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Production"
+    },
+    "shda": {
+      "id": "shda",
+      "name": "share of workers affording a healthy diet",
+      "unit": "share",
+      "items": [],
+      "description": ""
+    },
+    "tfps": {
+      "name": "tfps",
+      "unit": "index (2017=1)",
+      "items": [
+        "agr",
+        "bc20",
+        "nonf",
+        "pdsv",
+        "prfd",
+        "tot"
+      ],
+      "description": "Total factor productivity"
+    },
+    "tghg": {
+      "name": "tghg",
+      "unit": "mtco2e",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "ent",
+        "grs",
+        "lsp",
+        "mas",
+        "mgr",
+        "mmg",
+        "nrm",
+        "oap",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "rcc",
+        "ric",
+        "rum",
+        "sfr",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Emission reduction from mitigation technologies"
+    },
+    "vaad": {
+      "name": "vaad",
+      "unit": "bn usd 2005 mer",
+      "items": [
+        "agr",
+        "bc20",
+        "crp",
+        "lsp",
+        "nonf",
+        "pdsv",
+        "prfd",
+        "tot"
+      ],
+      "description": "Value added"
+    },
+    "vegc": {
+      "name": "vegc",
+      "unit": "tc/ha",
+      "items": [
+        "agr",
+        "crp",
+        "for",
+        "grs",
+        "nld",
+        "onv",
+        "tot"
+      ],
+      "description": "Aboveground carbon stocks in vegetation"
+    },
+    "waga": {
+      "id": "waga",
+      "name": "wages agriculture",
+      "unit": "usd/worker",
+      "items": [],
+      "description": ""
+    },
+    "wags": {
+      "id": "wags",
+      "name": "wages skilled",
+      "unit": "usd/worker",
+      "items": [],
+      "description": ""
+    },
+    "wagt": {
+      "name": "wagt",
+      "unit": "usd/worker",
+      "items": [
+        "agr",
+        "bc20",
+        "crp",
+        "lsp",
+        "nonf",
+        "pdsv",
+        "prfd",
+        "tot"
+      ],
+      "description": "Factor prices labour in real terms"
+    },
+    "wagu": {
+      "id": "wagu",
+      "name": "wages unskilled",
+      "unit": "usd/worker",
+      "items": [],
+      "description": ""
+    },
+    "watr": {
+      "name": "watr",
+      "unit": "km3",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Water for irrigation (consumption)"
+    },
+    "watw": {
+      "name": "watw",
+      "unit": "km3",
+      "items": [],
+      "description": "Water for irrigation (withdrawal)"
+    },
+    "xprc": {
+      "name": "xprc",
+      "unit": "usd/t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pdsv",
+        "pfb",
+        "prfd",
+        "ric",
+        "rum",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Real consumer prices"
+    },
+    "xprp": {
+      "name": "xprp",
+      "unit": "usd/t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Real producer price/input price"
+    },
+    "xprx": {
+      "name": "xprx",
+      "unit": "usd/t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Real export price"
+    },
+    "yecc": {
+      "name": "yecc",
+      "unit": "multiplier (unitless)",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Climate change shifter on crop yield"
+    },
+    "yexo": {
+      "name": "yexo",
+      "unit": "t/ha",
+      "items": [],
+      "description": "Exogenous crop yield (including climate shifter)"
+    },
+    "yiir": {
+      "name": "yiir",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Crop yield - irrigated"
+    },
+    "yild": {
+      "name": "yild",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Crop yield"
+    },
+    "yirf": {
+      "name": "yirf",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Crop yield - rainfed"
+    },
+    "dwaga": {
+      "id": "dwaga",
+      "name": "daily wages agriculture",
+      "unit": "usd/worker",
+      "items": [],
+      "description": ""
+    },
+    "dwags": {
+      "id": "dwags",
+      "name": "daily wages skilled",
+      "unit": "usd/worker",
+      "items": [],
+      "description": ""
+    },
+    "dwagt": {
+      "id": "dwagt",
+      "name": "daily wages total",
+      "unit": "usd/worker",
+      "items": [],
+      "description": ""
+    },
+    "dwagu": {
+      "id": "dwagu",
+      "name": "daily wages unskilled",
+      "unit": "usd/worker",
+      "items": [],
+      "description": ""
+    },
+    "frtin": {
+      "name": "frtin",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Inorganic fertilizer use nitrogen"
+    },
+    "frtip": {
+      "name": "frtip",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Inorganic fertilizer use phosphorus"
+    },
+    "frton": {
+      "name": "frton",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Organic fertilizer use nitrogen"
+    },
+    "frtop": {
+      "name": "frtop",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Organic fertilizer use phosphorus"
+    },
+    "palma": {
+      "name": "palma",
+      "unit": "ratio",
+      "items": [],
+      "description": ""
+    },
+    "pesth": {
+      "name": "pesth",
+      "unit": "t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Use of more hazardous pesticides"
+    },
+    "proti": {
+      "name": "proti",
+      "unit": "gprt/cap/day",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Per capita protein intake per day"
+    },
+    "proto": {
+      "name": "proto",
+      "unit": "gprt/cap/day",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Per capita protein availability per day"
+    },
+    "qssuf": {
+      "id": "qssuf",
+      "name": "self-sufficiency ratio",
+      "unit": "ratio",
+      "items": [],
+      "description": ""
+    },
+    "distel": {
+      "id": "distel",
+      "name": "distance to min/max eat lancet target (kcal for total, grams otherwise)",
+      "unit": "ratio",
+      "items": [],
+      "description": ""
+    },
+    "quanti": {
+      "id": "quanti",
+      "name": "quantity food intake",
+      "unit": "g/cap/day",
+      "items": [],
+      "description": ""
+    },
+    "quants": {
+      "id": "quants",
+      "name": "quantity food supply",
+      "unit": "g/cap/day",
+      "items": [],
+      "description": ""
+    },
+    "yecc_i": {
+      "name": "yecc_i",
+      "unit": "multiplier (unitless)",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Climate change shifter on crop yield_Irrigated"
+    },
+    "yecc_r": {
+      "name": "yecc_r",
+      "unit": "multiplier (unitless)",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Climate change shifter on crop yield_Rainfed"
+    },
+    "yexo_i": {
+      "name": "yexo_i",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Exogenous crop yield - Irrigated"
+    },
+    "yexo_r": {
+      "name": "yexo_r",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Exogenous crop yield - Rainfed"
+    },
+    "cons_dm": {
+      "name": "cons_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Domestic use in dry matter content"
+    },
+    "ech4_eq": {
+      "name": "ech4_eq",
+      "unit": "mtco2e",
+      "items": [
+        "agr",
+        "crp",
+        "dry",
+        "ent",
+        "lsp",
+        "mmg",
+        "nrm",
+        "oap",
+        "rcc",
+        "ric",
+        "rum",
+        "tot"
+      ],
+      "description": "Total CH4 emissions"
+    },
+    "en2o_eq": {
+      "name": "en2o_eq",
+      "unit": "mtco2e",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "grs",
+        "lsp",
+        "mas",
+        "mgr",
+        "mmg",
+        "nrm",
+        "oap",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sfr",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Total N2O emissions"
+    },
+    "expo_dm": {
+      "name": "expo_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Exports in dry matter content"
+    },
+    "fdry_dm": {
+      "name": "fdry_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use dairy in dry matter content"
+    },
+    "feed_dm": {
+      "name": "feed_dm",
+      "unit": "1000 t",
+      "items": [
+        "cgr",
+        "crp",
+        "fsh",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use in dry matter content"
+    },
+    "ffsh_dm": {
+      "name": "ffsh_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed fish sector in dry matter content"
+    },
+    "fnrm_dm": {
+      "name": "fnrm_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use non-ruminant in dry matter content"
+    },
+    "food_dm": {
+      "name": "food_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Food use in dry matter content"
+    },
+    "frum_dm": {
+      "name": "frum_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use ruminant meat in dry matter content"
+    },
+    "fwst_hh": {
+      "name": "fwst_hh",
+      "unit": "1000 t",
+      "items": [
+        "tot",
+        "ric",
+        "wht",
+        "cgr",
+        "osd",
+        "sgc",
+        "vfn",
+        "pfb",
+        "ecp",
+        "ocr",
+        "crp",
+        "rum",
+        "nrm",
+        "dry",
+        "oap",
+        "lsp",
+        "fsh",
+        "agr",
+        "prfd",
+        "pdsv"
+      ],
+      "description": "Food waste at household level"
+    },
+    "impo_dm": {
+      "name": "impo_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Imports in dry matter content"
+    },
+    "nett_dm": {
+      "name": "nett_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Net trade in dry matter content"
+    },
+    "othu_dm": {
+      "name": "othu_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Other use in dry matter content"
+    },
+    "prod_dm": {
+      "name": "prod_dm",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "grs",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Production in dry matter content"
+    },
+    "xprc_dm": {
+      "name": "xprc_dm",
+      "unit": "usd/t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pdsv",
+        "pfb",
+        "prfd",
+        "ric",
+        "rum",
+        "sgc",
+        "tot",
+        "vfn",
+        "wht"
+      ],
+      "description": "Real consumer prices in dry matter content"
+    },
+    "xprp_dm": {
+      "name": "xprp_dm",
+      "unit": "usd/t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Real producer price/input price per unit dry matter content"
+    },
+    "xprx_dm": {
+      "name": "xprx_dm",
+      "unit": "usd/t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "dry",
+        "ecp",
+        "fsh",
+        "lsp",
+        "nrm",
+        "oap",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "rum",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Real export price per unit dry matter"
+    },
+    "yexo_dm": {
+      "name": "yexo_dm",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Exogenous crop yield in dry matter content (including climate shifter)"
+    },
+    "yiir_dm": {
+      "name": "yiir_dm",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Crop yield in dry matter content - irrigated"
+    },
+    "yild_dm": {
+      "name": "yild_dm",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "grs",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Crop yield in dry matter content"
+    },
+    "yirf_dm": {
+      "name": "yirf_dm",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Crop yield in dry matter content - rainfed"
+    },
+    "area_aem": {
+      "name": "area_aem",
+      "unit": "1000 ha",
+      "items": [
+        "tot",
+        "crp",
+        "agr",
+        "grs"
+      ],
+      "description": "Area in Agri-Environmental Measures (excl. organic farming)"
+    },
+    "area_lft": {
+      "name": "area_lft",
+      "unit": "1000 ha",
+      "items": [
+        "tot",
+        "crp",
+        "agr",
+        "grs"
+      ],
+      "description": "Agricultural land covered with landscape features"
+    },
+    "area_org": {
+      "name": "area_org",
+      "unit": "1000 ha",
+      "items": [
+        "tot",
+        "crp",
+        "agr",
+        "grs"
+      ],
+      "description": "Agricultural area under organic farming"
+    },
+    "area_til": {
+      "name": "area_til",
+      "unit": "1000 ha",
+      "items": [
+        "tot",
+        "crp",
+        "agr",
+        "grs"
+      ],
+      "description": "Tillage practices"
+    },
+    "empl_abs": {
+      "name": "empl_abs",
+      "unit": "million",
+      "items": [
+        "agr",
+        "nonf",
+        "pdsv",
+        "prfd",
+        "tot"
+      ],
+      "description": "Number of workers"
+    },
+    "fdry_prt": {
+      "name": "fdry_prt",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use dairy in protein content"
+    },
+    "ffsh_prt": {
+      "name": "ffsh_prt",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed fish sector in protein content"
+    },
+    "fnrm_prt": {
+      "name": "fnrm_prt",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use non-ruminant in protein content"
+    },
+    "frum_prt": {
+      "name": "frum_prt",
+      "unit": "1000 t",
+      "items": [
+        "agr",
+        "cgr",
+        "crp",
+        "grs",
+        "ocr",
+        "ofd",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Feed use ruminant meat in protein content"
+    },
+    "msa_vert": {
+      "name": "msa_vert",
+      "unit": "index",
+      "items": [
+        "agr",
+        "crp",
+        "for",
+        "grs",
+        "nld",
+        "onv",
+        "tot"
+      ],
+      "description": "Terrestrial Mean Species Abundance (MSA) - Vertebrates"
+    },
+    "qssuf_dm": {
+      "id": "qssuf_dm",
+      "name": "self-sufficiency ratio",
+      "unit": "ratio",
+      "items": [],
+      "description": ""
+    },
+    "xprp_idx": {
+      "name": "xprp_idx",
+      "unit": "index",
+      "items": [
+        "elec",
+        "ff"
+      ],
+      "description": "Energy price index"
+    },
+    "fwst_proc": {
+      "name": "fwst_proc",
+      "unit": "1000 t",
+      "items": [
+        "tot",
+        "ric",
+        "wht",
+        "cgr",
+        "osd",
+        "sgc",
+        "vfn",
+        "pfb",
+        "ecp",
+        "ocr",
+        "crp",
+        "rum",
+        "nrm",
+        "dry",
+        "oap",
+        "lsp",
+        "fsh",
+        "agr",
+        "prfd",
+        "pdsv"
+      ],
+      "description": "Food waste during processing and transport"
+    },
+    "fwst_prod": {
+      "name": "fwst_prod",
+      "unit": "1000 t",
+      "items": [
+        "tot",
+        "ric",
+        "wht",
+        "cgr",
+        "osd",
+        "sgc",
+        "vfn",
+        "pfb",
+        "ecp",
+        "ocr",
+        "crp",
+        "rum",
+        "nrm",
+        "dry",
+        "oap",
+        "lsp",
+        "fsh",
+        "agr",
+        "prfd",
+        "pdsv"
+      ],
+      "description": "Food waste during production stage"
+    },
+    "yexo_i_dm": {
+      "name": "yexo_i_dm",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Exogenous crop yield in dry matter content - Irrigated"
+    },
+    "yexo_r_dm": {
+      "name": "yexo_r_dm",
+      "unit": "t/ha",
+      "items": [
+        "cgr",
+        "crp",
+        "ecp",
+        "ocr",
+        "osd",
+        "pfb",
+        "ric",
+        "sgc",
+        "vfn",
+        "wht"
+      ],
+      "description": "Exogenous crop yield in dry matter content - Rainfed"
+    },
+    "msa_plants": {
+      "name": "msa_plants",
+      "unit": "index",
+      "items": [
+        "agr",
+        "crp",
+        "for",
+        "grs",
+        "nld",
+        "onv",
+        "tot"
+      ],
+      "description": "Terrestrial Mean Species Abundance (MSA) - Plants"
+    },
+    "palmashr10": {
+      "id": "palmashr10",
+      "name": "wage-income shares of the richest 10%",
+      "unit": "share",
+      "items": [],
+      "description": ""
+    },
+    "palmashr40": {
+      "id": "palmashr40",
+      "name": "wage-income shares of the poorest 40%",
+      "unit": "share",
+      "items": [],
+      "description": ""
+    }
+  },
+  "mapschema_item": {
+    "required": [
+      "name",
+      "description"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      }
+    }
+  },
+  "map_region_group": {
+    "eu": {
+      "name": "EU",
+      "description": "EU",
+      "region_boundry_file_link": "https://time.new"
+    },
+    "nuts2": {
+      "name": "NUTS2",
+      "description": "NUTS2",
+      "region_boundry_file_link": "https://time.new"
+    },
+    "non eu": {
+      "name": "Non EU",
+      "description": "Non EU",
+      "region_boundry_file_link": "https://time.new"
+    }
+  },
+  "mapschema_region": {
+    "required": [
+      "description",
+      "name",
+      "region_group"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "region_group": {
+        "type": "string"
+      }
+    }
+  },
+  "mapschema_variable": {
+    "required": [
+      "name",
+      "description",
+      "unit",
+      "items"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "unit": {
+        "type": "string"
+      },
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "description": {
+        "type": "string"
+      }
+    }
+  },
+  "template_validators": {
+    "unit": {
+      "value_equals": [
+        "&map_variable",
+        "{variable}",
+        "unit"
+      ]
+    }
+  },
+  "enum_map_dependencies": {
+    "map_variable": {
+      "m2m": {
+        "target": "map_item",
+        "field_path": [
+          "items"
+        ]
+      }
+    },
+    "map_region_group": {
+      "o2m": {
+        "target": "map_region",
+        "field_path": [
+          "region_group"
+        ]
+      }
+    }
+  },
+  "mapschema_region_group": {
+    "required": [
+      "name",
+      "description",
+      "region_boundry_file_link"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "region_boundry_file_link": {
+        "type": "string"
+      }
+    }
+  },
+  "root_schema_declarations": {
+    "time_dimension": "year",
+    "unit_dimension": "unit",
+    "value_dimension": "value",
+    "region_dimension": "region",
+    "variable_dimension": "variable",
+    "final_dimensions_order": [
+      "model",
+      "scenario",
+      "region",
+      "variable",
+      "item",
+      "year",
+      "value",
+      "unit"
+    ],
+    "region_boundary_file_link": "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
+  }
+}

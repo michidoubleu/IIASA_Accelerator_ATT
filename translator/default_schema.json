@@ -1,0 +1,179 @@
+{
+  "root": {
+    "type": "object",
+    "required": [
+      "model",
+      "region",
+      "variable",
+      "scenario",
+      "unit",
+      "year",
+      "value",
+      "item"
+    ],
+    "properties": {
+      "item": {
+        "type": "string"
+      },
+      "unit": {
+        "type": "string"
+      },
+      "year": {
+        "type": "number"
+      },
+      "model": {
+        "type": "string"
+      },
+      "value": {
+        "type": "number"
+      },
+      "region": {
+        "type": "string"
+      },
+      "scenario": {
+        "type": "string"
+      },
+      "variable": {
+        "type": "string"
+      }
+    }
+  },
+  "mapschema_item": {
+    "required": [
+      "name",
+      "description"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      }
+    }
+  },
+  "mapschema_region": {
+    "required": [
+      "description",
+      "name",
+      "region_group"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "region_group": {
+        "type": "string"
+      }
+    }
+  },
+  "mapschema_variable": {
+    "required": [
+      "name",
+      "description",
+      "unit",
+      "items"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "unit": {
+        "type": "string"
+      },
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      },
+      "description": {
+        "type": "string"
+      }
+    }
+  },
+  "mapschema_region_group": {
+    "required": [
+      "name",
+      "description",
+      "region_boundry_file_link"
+    ],
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "region_boundry_file_link": {
+        "type": "string"
+      }
+    }
+  },
+  "template_validators": {
+    "unit": {
+      "value_equals": [
+        "&map_variable",
+        "{variable}",
+        "unit"
+      ]
+    }
+  },
+  "enum_map_dependencies": {
+    "map_variable": {
+      "m2m": {
+        "target": "map_item",
+        "field_path": [
+          "items"
+        ]
+      }
+    },
+    "map_region_group": {
+      "o2m": {
+        "target": "map_region",
+        "field_path": [
+          "region_group"
+        ]
+      }
+    }
+  },
+  "root_schema_declarations": {
+    "time_dimension": "year",
+    "unit_dimension": "unit",
+    "value_dimension": "value",
+    "region_dimension": "region",
+    "variable_dimension": "variable",
+    "final_dimensions_order": [
+      "model",
+      "scenario",
+      "region",
+      "variable",
+      "item",
+      "year",
+      "value",
+      "unit"
+    ],
+    "region_boundary_file_link": "https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"
+  },
+  "map_region_group": {
+    "eu": {
+      "name": "EU",
+      "description": "EU",
+      "region_boundry_file_link": "https://time.new"
+    },
+    "nuts2": {
+      "name": "NUTS2",
+      "description": "NUTS2",
+      "region_boundry_file_link": "https://time.new"
+    },
+    "non eu": {
+      "name": "Non EU",
+      "description": "Non EU",
+      "region_boundry_file_link": "https://time.new"
+    }
+  }
+}

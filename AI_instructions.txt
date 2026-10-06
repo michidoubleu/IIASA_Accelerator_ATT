@@ -1,0 +1,7 @@
+I need you to implement a 2-way translator routine using either R or python that has as an input/output (depending on the direction) A) An excel workbook with model parameters (Variables, items, Regions, units) and B) A json file for an online validator and merge routine that croscompares data uploads against this template.
+The 2 way routine should allow researchers to either get the latest workbook based on the current json file, or update the json file based on updates (that follow the common structure) in the workbook.
+
+In the subfolder called examples, you find both the current json for the validation and the current excel workbook. (they might be already out of sync, but you should be able to learn how one defines the other and the other way around.
+The tool should basically allow to either provide a json and creates the workbook or take the workbook and create the json.
+
+If you need anything don't assume, but ask for more inputs from me.
